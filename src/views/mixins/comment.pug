@@ -1,0 +1,9 @@
+mixin comment(info)
+          .table_row
+            .table_icon #{info.type}
+            .table_title 
+              a(href=`/videos/info.id`)=info.title
+            .table_bubble_icon
+              i.fas.fa-comment-alt
+              .table_bubble #{info.comments}
+            .table_date #{info.createdAt}

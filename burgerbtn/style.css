@@ -1,0 +1,76 @@
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* button {
+    background: inherit;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    overflow: visible;
+    cursor: pointer
+} */
+
+/* header button details */
+
+.menubtn {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    padding: 12px;
+    margin: 12px;
+    border: 1px solid #000;
+}
+
+.menubtn_burger {
+    width: 30px;
+    height: 4px;
+    background: #000;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+
+.menubtn_burger::before, .menubtn_burger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: #000;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+
+.menubtn_burger::before {
+    transform: translateY(-11px);
+}
+
+.menubtn_burger::after {
+    transform: translateY(11px);
+}
+
+/* ANIMATION */
+
+.menubtn.open .menubtn_burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.menubtn.open .menubtn_burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menubtn.open .menubtn_burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}

@@ -1,0 +1,37 @@
+header
+    .header_inner_container
+        .logo_nav
+          img.logo(src='images/logo.svg')
+          nav
+            a(href='../genre/index.html') 연극
+            a(href='../community/index.html') 커뮤니티
+            a(href='') 팀소개
+        .searchbox
+          input.search(type='text' placeholder='연극 제목 검색')
+          .icon
+            i.fas.fa-search
+        .profilebox
+          nav
+            a.headerLogIn LogIn
+            a.headerSignUp SignUp
+            form.loginForm
+              .loginLogo
+                img(src='images/logo.svg')
+              h2 로그인
+              input.loginId(type='text' placeholder='아이디')
+              input.loginPw(type='text' placeholder='비밀번호')
+              .loginAdd
+                p.loginKeep
+                  input(type='checkbox')
+                  label 로그인 유지
+                .accountnull
+                  | 계정이 없으신가요? 
+                  a(href='') 회원가입
+              button.loginBtn 로그인
+              .loginOr OR
+              button.loginGl Google을 사용하여 로그인
+              button.loginFb Facebook을 사용하여 로그인
+              .accountforgot
+                | 계정을 잊으셨나요? 
+                a(href='') 아이디 / 비밀번호 찾기
+          i.far.fa-user
