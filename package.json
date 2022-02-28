@@ -1,31 +1,31 @@
 {
-  "name": "2021_m2_web",
-  "version": "1.0.0",
-  "description": "Daehakro Theater Community No.1",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Kim-HyunSeo/2021_M2_Web.git"
-  },
-  "scripts": {
-    "dev": "nodemon --exec babel-node src/server.js"
-  },
-  "author": "Kim Hyunseo",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Kim-HyunSeo/2021_M2_Web/issues"
-  },
-  "homepage": "https://github.com/Kim-HyunSeo/2021_M2_Web#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "fs": "0.0.1-security",
-    "morgan": "^1.10.0",
-    "path": "^0.12.7",
-    "pug": "^3.0.2"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.14.6",
-    "@babel/node": "^7.14.7",
-    "@babel/preset-env": "^7.14.7",
-    "nodemon": "^2.0.9"
-  }
+    "name": "curtain-call",
+    "version": "1.0.0",
+    "description": "Daehakro Theater Community",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Kim-HyunSeo/2021_M2_Web.git"
+    },
+    "scripts": {
+        "dev": "nodemon --exec babel-node src/app.js"
+    },
+    "author": "KIM HYUNSEO",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/hnklcbs/create-curtaincall-node/issues"
+    },
+    "homepage": "https://github.com/hnklcbs/create-curtaincall-node",
+    "dependencies": {
+        "express": "^4.17.1",
+        "fs": "0.0.1-security",
+        "morgan": "^1.10.0",
+        "path": "^0.12.7",
+        "pug": "^3.0.2"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.14.6",
+        "@babel/node": "^7.14.7",
+        "@babel/preset-env": "^7.14.7",
+        "nodemon": "^2.0.9"
+    }
 }
