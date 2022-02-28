@@ -1,13 +1,13 @@
-import express from "express";
-import path from "path";
-import { home } from "../controllers/playControllers";
-import { join, login } from "../controllers/userControllers";
+const express = require("express");
+const router = express.Router();
 
-const app = express();
-const globalRouter  = express.Router();
+const Post = require("../models/Post");
 
-globalRouter.get("/", home);
-globalRouter.get("/join", join);
-globalRouter.get("/login", login);
+router.get("/", async (req, res) => {
+    const posts = await Post.find({}).populate("User");
+    return res.render("main", { pageTitle: "메인 | 커튼콜", posts });
+});
+router.get("/join", (req, res) => res.send("Join"));
+router.get("/login", (req, res) => res.send("Login"));
 
-export default globalRouter;
+module.exports = router;

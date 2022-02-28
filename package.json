@@ -4,20 +4,21 @@
     "description": "Daehakro Theater Community",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Kim-HyunSeo/2021_M2_Web.git"
+        "url": "https://github.com/hnklcbs/create-curtaincall-node"
     },
     "scripts": {
-        "dev": "nodemon --exec babel-node src/app.js"
+        "start": "nodemon --exec babel-node src/app.js"
     },
     "author": "KIM HYUNSEO",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/hnklcbs/create-curtaincall-node/issues"
     },
-    "homepage": "https://github.com/hnklcbs/create-curtaincall-node",
     "dependencies": {
+        "dotenv": "^16.0.0",
         "express": "^4.17.1",
         "fs": "0.0.1-security",
+        "mongoose": "^6.2.3",
         "morgan": "^1.10.0",
         "path": "^0.12.7",
         "pug": "^3.0.2"
@@ -27,5 +28,6 @@
         "@babel/node": "^7.14.7",
         "@babel/preset-env": "^7.14.7",
         "nodemon": "^2.0.9"
-    }
+    },
+    "main": "index.js"
 }

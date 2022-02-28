@@ -5,8 +5,7 @@ html(lang='ko')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     script(src='https://use.fontawesome.com/releases/v5.2.0/js/all.js')
-    style
-      include style.css
+    link(rel='stylesheet', href='/css/style.css')
     title #{pageTitle}
   body
     include partials/header.pug
@@ -319,7 +318,7 @@ html(lang='ko')
                 th.main6_2_text3 댓글
                 th.main6_2_text4 날짜
           include mixins/comment
-          each potato in comments
+          each potato in posts
             +comment(potato)
           else 
             //- 게시글이 없습니다.
@@ -331,4 +330,4 @@ html(lang='ko')
             button.main6_4_numberbox 5
     include partials/footer
   script
-    include index.js
+    include /js/index.js
