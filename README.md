@@ -1,18 +1,28 @@
-/ -> Main
-/join -> join
-/login -> Login
+get/ -> Main
+get/join -> Join Form
+post/join -> Join
+get/login -> Login Form
+post/login -> Login
+get/find-password -> Find Password Form
+post/find-password -> Find Password
 
-/user/:id -> See User
-/user/logout -> Log Out
-/user/edit -> Edit MY Profile
-/user/remove -> Delete MY Profile
+get/user/:id -> See User
+get/user/:id/edit -> Edit MY Profile Form
+put/user/:id/edit -> Edit MY Profile
+delete/user/:id -> Delete MY Profile
 
-/play/genre -> 연극 장르별
-/play/community -> 연극 커뮤니티
-/play/community/upload ->
-/play/community/edit -> 
-/play/community/delete -> 
-/play/detail/:id -> 연극 상세정보
+get/play -> Play Main
+get/play/:id -> Play Detail
+get/play/genre? -> Sort For Genre
 
-/team/info -> 팀 소개 페이지
-/team/video -> 팀 소개 유튜브 영상 페이지
+get/play/posts -> Community
+get/play/posts/new -> Community Posting Form
+post/play/posts/ -> Community Posting
+get/play/posts/:id/edit -> Community Posting Edit Form
+delete/play/posts/:id/delete ->Community Posting Delete
+
+get/team -> Team Main
+get/team/:id -> Team Video
+post/team -> Team Posting Form
+put/team -> Team Posting Edit Form
+delete/team -> Team Posting Delete
