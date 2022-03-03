@@ -5,164 +5,152 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="./style.css" />
-        <!-- <link rel="shortcut icon" href="./images/icon.jpeg" /> -->
         <title>커튼콜</title>
     </head>
     <body>
         <header>
-            <div class="header_inner_container">
-                <div class="logo_nav">
-                    <img class="logo" onclick="window.location.href ='../main/index.html'" src="./images/logo.png" />
-                    <nav>
-                        <a href="../movie/index.html">영상</a>
-                        <a href="../community/index.html">커뮤니티</a>
-                        <a href="../team/index.html">팀소개</a>
-                    </nav>
+            <div class="logo_nav">
+                <img class="logo" onclick="window.location.href ='../main/index.html'" src="./images/logo.png" />
+                <nav>
+                    <a href="../movie/index.html">영상</a>
+                    <a href="../community/index.html">커뮤니티</a>
+                    <a href="../team/index.html">팀소개</a>
+                </nav>
+            </div>
+            <div class="searchbox">
+                <input class="search" type="text" placeholder="연극 제목 검색" />
+                <div class="icon">
+                    <i class="fas fa-search"></i>
                 </div>
-                <div class="searchbox">
-                    <input class="search" type="text" placeholder="연극 제목 검색" />
-                    <div class="icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                </div>
-                <div class="profilebox">
-                    <nav>
-                        <a class="headerLogIn">LogIn</a>
-                        <a class="headerSignUp">SignUp</a>
-                        <form class="loginForm">
-                            <div class="loginLogo"><img src="./images/logo.png" /></div>
-                            <h2>로그인</h2>
-                            <input class="loginId" type="text" placeholder="아이디" />
-                            <input class="loginPw" type="text" placeholder="비밀번호" />
-                            <div class="loginAdd">
-                                <p class="loginKeep"><input type="checkbox" /><label>로그인 유지</label></p>
-                                <div class="accountnull">계정이 없으신가요? <a href="">회원가입</a></div>
-                            </div>
-                            <button class="loginBtn">로그인</button>
-                            <div class="loginOr">OR</div>
-                            <button class="loginGl">Google을 사용하여 로그인</button>
-                            <button class="loginFb">Facebook을 사용하여 로그인</button>
-                            <div class="accountforgot">계정을 잊으셨나요? <a href="">아이디 / 비밀번호 찾기</a></div>
-                        </form>
-                    </nav>
-                    <i class="far fa-user"></i>
-                </div>
+            </div>
+            <div class="profilebox">
+                <nav>
+                    <a class="headerLogIn">LogIn</a>
+                    <a class="headerSignUp">SignUp</a>
+                    <form class="loginForm">
+                        <div class="loginLogo"><img src="./images/logo.png" /></div>
+                        <h2>로그인</h2>
+                        <input class="loginId" type="text" placeholder="아이디" />
+                        <input class="loginPw" type="text" placeholder="비밀번호" />
+                        <div class="loginAdd">
+                            <p class="loginKeep"><input type="checkbox" /><label>로그인 유지</label></p>
+                            <div class="accountnull">계정이 없으신가요? <a href="">회원가입</a></div>
+                        </div>
+                        <button class="loginBtn">로그인</button>
+                        <div class="loginOr">OR</div>
+                        <button class="loginGl">Google을 사용하여 로그인</button>
+                        <button class="loginFb">Facebook을 사용하여 로그인</button>
+                        <div class="accountforgot">계정을 잊으셨나요? <a href="">아이디 / 비밀번호 찾기</a></div>
+                    </form>
+                </nav>
+                <i class="far fa-user"></i>
             </div>
         </header>
         <main>
-            <div id="main1">
-                <div id="img1"><img src="./images/main.png" /></div>
-                <div class="small_circle"></div>
-                <div class="main1_text">연극의 온기를 전달합니다.</div>
-                <div class="big_circle"></div>
-                <div class="main1_drive">
-                    <a id="story1" class="story"> • 연극 라면 </a>
-                    <a id="story2" class="story"> • 수상한 흥신소 </a>
-                    <a id="story3" class="story"> • 택시 안에서 </a>
-                    <a id="story4" class="story"> • 옥탑방 고양이 </a>
-                    <a id="story5" class="story"> • 쉬어 매드니스 </a>
+            <section id="box1">
+                <img src="./images/main.png" />
+                <div class="circle small"></div>
+                <div class="circle big"></div>
+                <h1 class="box1_title">연극의 온기를 전달합니다.</h1>
+                <ul class="circle_title">
+                    <li class="story story1">• 연극 라면</li>
+                    <li class="story story2">• 수상한 흥신소</li>
+                    <li class="story story3">• 택시 안에서</li>
+                    <li class="story story4">• 옥탑방 고양이</li>
+                    <li class="story story5">• 쉬어 매드니스</li>
+                </ul>
+                <div class="slide slide1">
+                    <p class="title">연극 라면</p>
+                    <p class="location">해피 씨어터</p>
+                    <p class="period">2021.01.16 ~ 2021.07.31</p>
                 </div>
-                <div class="moving_box1">
-                    <div class="icon1"><i class="far fa-heart fa-2x"></i></div>
-                    <div class="icon2"><i class="far fa-image fa-10x"></i></div>
-                    <div class="moving_box_text">
-                        <div class="moving_box_title">연극 라면</div>
-                        <div class="moving_box_theater">해피 씨어터</div>
-                        <div class="moving_box_date">2021.01.16 ~ 2021.07.31</div>
-                    </div>
+                <div class="slide slide2">
+                    <p class="title">수상한 흥신소</p>
+                    <p class="location">큐씨어터</p>
+                    <p class="period">2021.06.21 ~ 2021.07.31</p>
                 </div>
-                <div class="moving_box2">
-                    <div class="icon1"><i class="far fa-heart fa-2x"></i></div>
-                    <div class="icon2"><i class="far fa-image fa-10x"></i></div>
-                    <div class="moving_box_text">
-                        <div class="moving_box_title">수상한 흥신소</div>
-                        <div class="moving_box_theater">큐씨어터</div>
-                        <div class="moving_box_date">2021.06.21 ~ 2021.07.31</div>
-                    </div>
+                <div class="slide slide3">
+                    <p class="title">택시 안에서</p>
+                    <p class="location">해바라기 소극장</p>
+                    <p class="period">2019.03.14 ~ 오픈런</p>
                 </div>
-                <div class="moving_box3">
-                    <div class="icon1"><i class="far fa-heart fa-2x"></i></div>
-                    <div class="icon2"><i class="far fa-image fa-10x"></i></div>
-                    <div class="moving_box_text">
-                        <div class="moving_box_title">택시 안에서</div>
-                        <div class="moving_box_theater">해바라기 소극장</div>
-                        <div class="moving_box_date">2019.03.14 ~ 오픈런</div>
-                    </div>
+                <div class="slide slide4">
+                    <p class="title">옥탑방 고양이</p>
+                    <p class="location">틴틴홀</p>
+                    <p class="period">2010.04.06 ~ 오픈런</p>
                 </div>
-                <div class="moving_box4">
-                    <div class="icon1"><i class="far fa-heart fa-2x"></i></div>
-                    <div class="icon2"><i class="far fa-image fa-10x"></i></div>
-                    <div class="moving_box_text">
-                        <div class="moving_box_title">옥탑방 고양이</div>
-                        <div class="moving_box_theater">틴틴홀</div>
-                        <div class="moving_box_date">2010.04.06 ~ 오픈런</div>
-                    </div>
-                </div>
-                <div class="moving_box5">
-                    <div class="icon1"><i class="far fa-heart fa-2x"></i></div>
-                    <div class="icon2"><i class="far fa-image fa-10x"></i></div>
-                    <div class="moving_box_text">
-                        <div class="moving_box_title">쉬어 매드니스</div>
-                        <div class="moving_box_theater">콘텐츠 박스</div>
-                        <div class="moving_box_date">2015.11.12 ~ 오픈런</div>
-                    </div>
-                </div>
-            </div>
-            <div id="main5">
-                <div class="main5_text1">공지글</div>
-                <div class="box5_text_ctn">
-                    <div class="main5_text2">대학로의 이슈를 바로 확인하세요</div>
-                    <div class="box5_more">더보기</div>
-                </div>
-                <div class="ggg">
-                    <div class="ggg_origin">
-                        <div class="ggg_img">
-                            <div class="ggg_img_icon">
-                                <i class="far fa-image fa-5x"></i>
-                            </div>
-                        </div>
-                        <div class="ggg_textbox">
-                            <div class="ggg_title">배우와의 만남</div>
-                            <div class="ggg_date">2021/06/23</div>
-                            <div class="ggg_main">
-                                TextTextTextTextTextText TextTextTextTextTextText<br />
-                                TextTextTextTextText<br />
-                            </div>
-                            <div class="detail">자세히보기</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <section class="board">
-                <div class="boardtitle">
-                    <h1>자유게시판</h1>
-                </div>
-                <table id="main6">
-                    <thead>
-                        <th class="main6_2_text1">분류</th>
-                        <th class="main6_2_text2">제목</th>
-                        <th class="main6_2_text3">댓글</th>
-                        <th class="main6_2_text4">날짜</th>
-                    </thead>
-                </table>
-                <div class="table_row">
-                    <div class="table_icon"><i class="far fa-edit"></i></div>
-                    <div class="table_title">무슨연극 재밌어요?</div>
-                    <div class="table_bubble_icon">
-                        <i class="fas fa-comment-alt"></i>
-                        <div class="table_bubble">13</div>
-                    </div>
-                    <div class="table_date">2021/06/09</div>
-                </div>
-                <div class="main6_4">
-                    <button class="main6_4_numberbox">1</button>
-                    <button class="main6_4_numberbox">2</button>
+                <div class="slide slide5">
+                    <p class="title">쉬어 매드니스</p>
+                    <p class="location">콘텐츠 박스</p>
+                    <p class="period">2015.11.12 ~ 오픈런</p>
                 </div>
             </section>
+            <div class="inner_container">
+                <h2 class="box2_title">| 대학로 연극</h2>
+                <section id="box2">
+                    <div class="box">
+                        <div class="info">
+                            <h3 class="title">옥탑방 고양이</h3>
+                            <i class="far fa-heart"></i>
+                            <div class="comment">
+                                <i class="far fa-comment-alt fa-1x"></i>
+                                <p class="count">10</p>
+                            </div>
+                            <hr />
+                            <div class="period">2010.04.06 ~ 오픈런</div>
+                            <div class="location">틴틴홀</div>
+                        </div>
+                    </div>
+                </section>
+                <h2 class="box3_title">| 자유게시판</h2>
+                <section id="box3">
+                    <table>
+                        <tr class="thead">
+                            <th class="id">번호</th>
+                            <th class="title">제목</th>
+                            <th class="author">글쓴이</th>
+                            <th class="createdAt">작성일</th>
+                            <th class="views">조회</th>
+                            <th class="comments">댓글</th>
+                        </tr>
+                        <tr class="tbody">
+                            <td class="id">3</td>
+                            <td class="title">무슨연극 재밌어요?</td>
+                            <td class="author">관리자</td>
+                            <td class="createdAt">2021/06/09</td>
+                            <td class="views">190</td>
+                            <td class="comments">13</td>
+                        </tr>
+                        <tr class="tbody">
+                            <td class="id">2</td>
+                            <td class="title">무슨연극 재밌어요?</td>
+                            <td class="author">관리자</td>
+                            <td class="createdAt">2021/06/09</td>
+                            <td class="views">190</td>
+                            <td class="comments">13</td>
+                        </tr>
+                        <tr class="tbody">
+                            <td class="id">1</td>
+                            <td class="title">무슨연극 재밌어요?</td>
+                            <td class="author">관리자</td>
+                            <td class="createdAt">2021/06/09</td>
+                            <td class="views">190</td>
+                            <td class="comments">13</td>
+                        </tr>
+                    </table>
+                    <div class="page">
+                        <button class="button button1">1</button>
+                        <button class="button button2">2</button>
+                    </div>
+                </section>
+            </div>
         </main>
         <footer>
-            <div class="footer_container">
+            <div class="inner_container">
                 <img class="footerlogo" src="images/logo.png" />
                 <table>
                     <tr>
@@ -181,9 +169,10 @@
                         <img class="gschool" src="images/gschool.png" />
                     </div>
                 </div>
-                <p class="copyright">Copyright© 2021. hnklcbs all right reserved.</p>
+                <p class="copyright">Copyright© 2022. hnklcbs all right reserved.</p>
             </div>
         </footer>
+
         <script src="./index.js"></script>
     </body>
 </html>
