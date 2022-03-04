@@ -1,90 +1,31 @@
 header {
+    width: 1080px;
     height: 60px;
-    margin: 0 auto;
+    background-color: transparent;
     display: flex;
-    z-index: 3;
-    width: 1060px;
-    padding: 0 10px;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-}
-
-.logo_nav {
-    width: 380px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.logo {
-    width: 120px;
-    height: auto;
+    margin: 0 auto;
+    z-index: 3;
 }
 
 header nav {
-    width: 240px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
 }
 
 header nav a {
-    padding: 6px;
-    font-size: 20px;
-    transition: 0.5s;
-    cursor: pointer;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 10px;
 }
 
-header nav a:hover {
-    transform: translateY(-1px);
+header nav a img {
+    height: 40px;
+    margin: 10px 0;
 }
 
-.searchbox {
-    width: auto;
-    height: 29px;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid black;
-}
-
-.search {
-    width: 320px;
-    height: 40x;
-    font-size: 16px;
-    padding: 0;
-    border: 0;
-}
-
-.searchbox i {
-    width: 20px;
-    height: 20px;
-    font-size: 18px;
-    justify-content: end;
-    padding: 12px 0;
-}
-
-.profilebox {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 150px;
-}
-
-.profilebox nav {
-    width: 100px;
-}
-
-.profilebox nav a {
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-}
-
-.profilebox i {
-    font-size: 20px;
-    margin-top: 3px;
-    margin-left: 5.5px;
-}
 /* Login details */
 
 .loginForm {

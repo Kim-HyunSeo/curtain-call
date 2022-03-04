@@ -1,4 +1,4 @@
-@import url(./reset.css);
+@import url(../reset.css);
 @import url(../header.css);
 
 :root {
@@ -14,13 +14,13 @@ a {
 
 body {
     font-family: "Noto Sans KR", sans-serif;
-    background-color: var(--white);
     overflow-x: hidden;
 }
 
 .inner_container {
     width: 1060px;
     padding: 0 10px;
+    background-color: var(--white);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -288,6 +288,7 @@ body {
 
 #box3 table tr td {
     padding: 8px 4px;
+    border-bottom: 1px solid var(--gray);
 }
 
 table tr .id,
