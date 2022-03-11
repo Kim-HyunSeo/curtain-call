@@ -16,14 +16,13 @@ header nav {
 }
 
 header nav a {
-    height: 60px;
-    line-height: 60px;
-    padding: 0 10px;
+    cursor: pointer;
+    margin: 10px;
 }
 
 header nav a img {
-    height: 40px;
-    margin: 10px 0;
+    height: 36px;
+    margin: 12px 0;
 }
 
 /* Login details */
@@ -203,4 +202,22 @@ input::placeholder {
 .loginCompany img {
     height: 24px;
     text-align: center;
+}
+
+/* progressbar detail */
+
+.progress-container {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #edc4c4;
+    height: 6px;
+}
+
+.progress-bar {
+    height: 6px;
+    background: black;
+    width: 0%;
+    transition: all 0.1s ease;
 }
