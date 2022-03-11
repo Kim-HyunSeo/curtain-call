@@ -3,10 +3,8 @@ const app = express();
 const path = require("path");
 const morgan = require("morgan");
 const logger = morgan("dev");
-const dotenv = require("dotenv");
+const dotenv = require("dotenv").config();
 const mongoose = require("mongoose");
-
-dotenv.config({ path: path.resolve(__dirname + "/.env") });
 
 import indexRouter from "./routes/indexRouter";
 import userRouter from "./routes/userRouter";
